@@ -11,13 +11,17 @@ public class SptGame {
 
     static void guessOption() {
         Scanner sc = new Scanner(System.in);
-        String ans = gen_word();
+
         int usercnt=0;
         int comcnt=0;
-        int i=3;
-        while (i!=0) {
-            System.out.println("enter your option");
+        int i=1;
+        System.out.println("You have 3 chances:");
+        while (i!=4) {
+            String ans = gen_word();
+            System.out.println("enter your pick "+i);
             String guess = sc.nextLine();
+
+            System.out.println("Computer's Pick: "+ans);
             if (guess.equalsIgnoreCase("stone") && ans.equalsIgnoreCase("paper")) {
 
                 comcnt++;
@@ -35,14 +39,15 @@ public class SptGame {
                 usercnt++;
             } else if (guess.equalsIgnoreCase("scissor") && ans.equalsIgnoreCase("stone")) {
 
-                usercnt++;
+                comcnt++;
             }
-            i--;
+            i++;
         }
         if(usercnt>comcnt) {
             System.out.println("you win!");
-        }
-        else System.out.println("computer win");
+        } else if (usercnt==comcnt) {
+            System.out.println("Draw");
+        } else System.out.println("computer win");
 
 
     }
