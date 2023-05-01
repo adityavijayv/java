@@ -75,7 +75,7 @@ public class HangmanLogic {
     {
         System.out.println("                                                                          ");
         System.out.println("Guess the animal name !!! ---->");
-
+        System.out.println("This is created by Aditya Vj");
         for(int i=0;i<size;i++)
         {
             System.out.print("_ "+"  ");
