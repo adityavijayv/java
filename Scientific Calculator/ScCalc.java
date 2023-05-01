@@ -9,7 +9,7 @@ public class ScCalc {
         Double result;
 
         Scanner input = new Scanner(System.in);
-
+        System.out.println("This is created by Aditya Vj");
         System.out.println("Choose an operation: Sin(a),Cos(b), Tan(c)");
         operation = input.next().charAt(0);
 
