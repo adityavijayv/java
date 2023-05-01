@@ -15,6 +15,7 @@ public class SptGame {
         int usercnt=0;
         int comcnt=0;
         int i=1;
+        System.out.println("This is created by Aditya Vj");
         System.out.println("You have 3 chances:");
         while (i!=4) {
             String ans = gen_word();
