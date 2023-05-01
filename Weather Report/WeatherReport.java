@@ -11,6 +11,7 @@ public class WeatherReport {
     public static void main(String[] args) {
         try{
             System.out.println("Welcome to the weather report system");
+            System.out.println("This is created by Aditya Vj");
 
             Scanner sc = new Scanner(System.in);
             String city,state,country;
